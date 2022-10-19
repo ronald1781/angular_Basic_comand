@@ -1,0 +1,50 @@
+INSTALACION EN UBUNTU
+se dbe instalar nodejs
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc
+nvm install node
+
+se debe instalar angular
+npm cache clean --force
+npm set audit false
+npm uninstall -g angular-cli
+npm uninstall -g @angular/cli
+npm cache clean --force
+
+npm install -g @angular/cli
+
+instalacion de versiones anteriores opcional
+npm install -g @angular/cli@8
+npm install -g @angular/cli@9
+npm install -g @angular/cli@10
+
+verificando version
+ng --version
+
+creando projecto 
+ng new hello-world
+
+Iniciar server del projecto
+ng server
+ng s -o //compila y abre solo
+inicia por defaul  http://localhost:4200
+
+cambiar host y puerto de projecto
+ng serve --host 0.0.0.0 --port 8080
+ng serve --host 192.168.1.24 --port 4200
+creando componete por comando
+ng g c compb
+ng g c compc --skipTests   //sin archivo de prueba unitario
+ng g c compc --skip-Tests  // esto va en version 13
+
+agregar angular material
+ng add @angular/material
+
+comandos basicos angular
+para captura el evento en input
+(keyup)=""
+(click)=""
+[(ngModel)]="num1"
+
+
+ng g s app
