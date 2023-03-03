@@ -47,4 +47,6 @@ para captura el evento en input
 [(ngModel)]="num1"
 
 
-ng g s app
+ng g s app generea servicio
+ng g c app generea componente
+ng g class app generea clase  o modelo
